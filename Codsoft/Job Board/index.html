@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Job Board</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#job-listings">Job Listings</a>
+            <a href="#employer-dashboard">Employer Dashboard</a>
+            <a href="#candidate-dashboard">Candidate Dashboard</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Featured Job Listings</h2>
+        <div class="job-listing">
+            <img src="amazon.png">
+            <h3>Software Developer</h3>
+            <p> Company: Amazon<br>Location: Remote</p>
+            <a href="#job-detail">View Details</a>
+        </div>
+        <!-- Add more job listings as needed -->
+    </section>
+
+    <section id="job-listings">
+        <h2>Job Listings</h2>
+        <input type="text" placeholder="Search for jobs..." id="search-bar">
+        <div class="job-listing">
+            <img src="amazon.png">
+            <h3>Software Developer</h3>
+            <p> Company: Amazon<br>Location: Remote</p>
+            <a href="#job-detail">View Details</a>
+        </div>
+        <div class="job-listing">
+            <img src="flipkart.png">
+            <h3>Data Scientist</h3>
+            <p> Company: Flipkart <br> Location: New York, NY</p>
+            <a href="#job-detail">View Details</a>
+        </div>
+        <div class="job-listing">
+            <img src="google.png">
+            <h3>Product Manager</h3>
+            <p> Company: Google <br> Location: San Francisco, CA</p>
+            <a href="#job-detail">View Details</a>
+        </div>
+        <div class="job-listing">
+            <img src="linkedin.png">
+            <h3>Graphic Designer</h3>
+            <p> Company: LinkedIn<br> Location: Remote</p>
+            <a href="#job-detail">View Details</a>
+        </div>
+        <div class="job-listing">
+            <img src="microsoft.png">
+            <h3>Marketing Specialist</h3>
+            <p> Company: Microsoft<br> Location: Miami, FL</p>
+            <a href="#job-detail">View Details</a>
+        </div>
+        <div class="job-listing">
+            <img src="youtube.png">
+            <h3>Content Manager</h3>
+            <p> Company: Youtube <br> Location: Delhi, India</p>
+            <a href="#job-detail">View Details</a>
+        </div>
+    </section>
+
+    <section id="job-detail">
+        <h2>Job Detail</h2>
+        <img src="amazon.png">
+        <h3>Software Developer</h3>
+        <p> Company: Amazon<br>Location: Remote</p>
+        <p> Description: We are looking for a skilled Software Developer to join our team. You will be responsible for developing and maintaining web applications. Requirements include proficiency in JavaScript, HTML, CSS, and experience with React or Angular.</p>
+        <a href="#apply">Apply Now</a>
+        <div class="profile-reviews">
+            <h4>Employee Reviews</h4>
+            <p>John Doe: "Great place to work with amazing opportunities."</p>
+            <p>Jane Smith: "Supportive team and a positive work environment."</p>
+        </div>
+    </section>
+
+    <section id="employer-dashboard">
+        <h2>Employer Dashboard</h2>
+        <a href="#post-job">Post a New Job</a>
+        <!-- List of jobs posted by the employer -->
+    </section>
+
+    <section id="candidate-dashboard">
+        <h2>Candidate Dashboard</h2>
+        <a href="#profile">Edit Profile</a>
+        <h2>Your Applications</h2>
+        <!-- List of jobs the candidate has applied to -->
+    </section>
+
+    <section id="apply">
+        <h2>Job Application</h2>
+        <form action="submit-application.html" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Job Board. All rights reserved.</p>
+    </footer>
+</body>
+</html>

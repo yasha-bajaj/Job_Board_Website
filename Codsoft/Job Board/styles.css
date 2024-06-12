@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.job-listing {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.job-listing:hover {
+    transform: scale(1.05);
+}
+
+.job-listing img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.job-listing h3 {
+    margin: 0;
+}
+
+.job-listing a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: auto;
+    transition: color 0.2s;
+}
+
+.job-listing a:hover {
+    text-decoration: underline;
+    color: #007BFF;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.job-detail-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.profile-reviews {
+    margin-top: 20px;
+}
+
+.profile-reviews h4 {
+    margin-bottom: 10px;
+}
+
+.profile-reviews p {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    form input, form button {
+        width: 100%;
+    }
+
+    .job-listing {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .job-listing img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
