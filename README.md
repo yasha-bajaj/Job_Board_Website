@@ -1,7 +1,3 @@
-# CODSOFT_TASK2
-
-# Job Board Website
-
 ## Overview
 A web application for employers to post job openings and for job seekers to search and apply for jobs.
 
