@@ -1,6 +1,3 @@
-## Overview
-A web application for employers to post job openings and for job seekers to search and apply for jobs.
-
 ## Features
 - User authentication
 - Job posting and searching
